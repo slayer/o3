@@ -19,6 +19,7 @@
 #define O3_NODE
 //#define O3_V8_GLUE
 #include <v8.h>
+#include <node.h>
 #include <o3.h>
 #include <js/js.h>
 //#include <buffer/buffer.h>
@@ -61,3 +62,4 @@ init (Handle<Object> target)
   
 }
 
+NODE_MODULE(o3, init)
